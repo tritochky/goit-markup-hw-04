@@ -3,6 +3,8 @@
   --color-text: #757575;
   --accent-color: #2196f3;
   --extra-color: #ffffff;
+  --color-client: #afb1b8;
+
   --text-font: "Roboto", sans-serif;
   --logo-font: "Raleway", sans-serif;
 }
@@ -50,8 +52,7 @@ img {
 
 .container {
   width: 1200px;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding: 0 15px;
   margin: 0 auto;
 }
 
@@ -321,7 +322,6 @@ input[type="radio"].visually-hidden {
 
 .team-list-item {
   width: 270px;
-  /* height: 368px; */
   background: var(--extra-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -371,22 +371,60 @@ input[type="radio"].visually-hidden {
   border-radius: 50%;
 }
 
+.current-link,
 .social-links-link:hover,
 .social-list-link:focus {
   background-color: var(--accent-color);
 }
 
+.current-link .social-links-icon,
 .social-links-link:hover .social-links-icon,
 .social-links-link:focus .social-links-icon {
   fill: var(--extra-color);
 }
 
 .social-links-icon {
-  width: 20px;
-  height: 20px;
   fill: #afb1b8;
 }
 /*==============END TEAM================*/
+
+/*==============CLIENTS================*/
+.clients-list {
+  display: flex;
+  justify-content: center;
+}
+
+.client-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 170px;
+  height: 90px;
+  border: 1px solid var(--color-client);
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+
+.current-logo,
+.client-link:hover,
+.client-link:focus {
+  border: 1px solid var(--accent-color);
+}
+
+.current-logo .client-logo,
+.client-link:hover .client-logo,
+.client-link:focus .client-logo {
+  fill: var(--accent-color);
+}
+
+.client-logo {
+  fill: var(--color-client);
+}
+
+.clients-list-item:not(:last-child) {
+  margin-right: 30px;
+}
+/*==============END CLIENTS================*/
 
 /*==============PORTFOLIO================*/
 .header-pf {
@@ -438,16 +476,13 @@ input[type="radio"].visually-hidden {
 .portfolio-list-item {
   width: 370px;
   background: var(--extra-color);
-
   box-sizing: border-box;
   margin: 15px;
+  outline: 1px solid #eeeeee;
 }
 
 .text {
   padding: 20px 24px;
-  border-left: 1px solid #eeeeee;
-  border-bottom: 1px solid #eeeeee;
-  border-right: 1px solid #eeeeee;
 }
 
 .portfolio-title {

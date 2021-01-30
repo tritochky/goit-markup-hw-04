@@ -42,12 +42,19 @@
             <a
               class="contacts-mail-link links current"
               href="mailto:info@devstudio.com"
-              >info@devstudio.com</a
+            >
+              <svg class="mail">
+                <use href="./images/sprite.svg#envelope"></use>
+              </svg>
+              info@devstudio.com</a
             >
           </li>
           <li class="contacts-list-item">
-            <a class="contacts-tel-link links" href="tel:+380961111111"
-              >+38 096 111 11 11</a
+            <a class="contacts-tel-link links" href="tel:+380961111111">
+              <svg class="phone">
+                <use href="./images/sprite.svg#phone"></use>
+              </svg>
+              +38 096 111 11 11</a
             >
           </li>
         </ul>
@@ -71,6 +78,11 @@
           <h2 class="title visually-hidden">Наши особенности</h2>
           <ul class="features-list lists">
             <li class="features-list-item">
+              <div class="features-icon">
+                <svg class="features-icon-item">
+                  <use href="./images/sprite.svg#antenna"></use>
+                </svg>
+              </div>
               <h3 class="subtitle">Внимание к деталям</h3>
               <p class="description">
                 Идейные соображения, а также начало повседневной работы по
@@ -78,6 +90,11 @@
               </p>
             </li>
             <li class="features-list-item">
+              <div class="features-icon">
+                <svg class="features-icon-item">
+                  <use href="./images/sprite.svg#clock"></use>
+                </svg>
+              </div>
               <h3 class="subtitle">Пунктуальность</h3>
               <p class="description">
                 Задача организации, в особенности же рамки и место обучения
@@ -85,6 +102,11 @@
               </p>
             </li>
             <li class="features-list-item">
+              <div class="features-icon">
+                <svg class="features-icon-item">
+                  <use href="./images/sprite.svg#computer"></use>
+                </svg>
+              </div>
               <h3 class="subtitle">Планирование</h3>
               <p class="description">
                 Равным образом консультация с широким активом в значительной
@@ -92,6 +114,11 @@
               </p>
             </li>
             <li class="features-list-item">
+              <div class="features-icon">
+                <svg class="features-icon-item">
+                  <use href="./images/sprite.svg#astronaut"></use>
+                </svg>
+              </div>
               <h3 class="subtitle">Современные технологии</h3>
               <p class="description">
                 Значимость этих проблем настолько очевидна, что реализация
@@ -110,7 +137,7 @@
             <li class="process-list-item">
               <img
                 class="process-list-img"
-                src="./img/what_we_do/img1.jpg"
+                src="./images/what_we_do/img1.jpg"
                 alt="Человек набирает программный код на компьютере"
                 width="370"
                 height="294"
@@ -119,7 +146,7 @@
             <li class="process-list-item">
               <img
                 class="process-list-img"
-                src="./img/what_we_do/img2.jpg"
+                src="./images/what_we_do/img2.jpg"
                 alt="Человек проверяет на компьютере соответствие макета и готовой программы для мобильного телефона"
                 width="370"
                 height="294"
@@ -128,7 +155,7 @@
             <li class="process-list-item">
               <img
                 class="process-list-img"
-                src="./img/what_we_do/img3.jpg"
+                src="./images/what_we_do/img3.jpg"
                 alt="Человек проверяет поведение программы на планшете"
                 width="370"
                 height="294"
@@ -146,46 +173,166 @@
             <li class="team-list-item">
               <img
                 class="team-list-img"
-                src="./img/team/demyanenko.jpg"
+                src="./images/team/demyanenko.jpg"
                 alt="Улыбающийся мужчина в очках и с бородой, которого зовут Игорь Демьяненко"
                 width="270"
                 height="260"
               />
               <h3 class="team-list-name">Игорь Демьяненко</h3>
               <p class="team-list-position" lang="en">Product Designer</p>
+              <ul class="social-links lists">
+                <li class="social-links-item">
+                  <a class="social-links-link" href="/" aria-label="Инстаграмм">
+                    <svg class="social-links-icon">
+                      <use href="./images/sprite.svg#instagram"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social-links-item">
+                  <a class="social-links-link" href="/" aria-label="Твиттер">
+                    <svg class="social-links-icon">
+                      <use href="./images/sprite.svg#twitter"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social-links-item">
+                  <a class="social-links-link" href="/" aria-label="Фейсбук">
+                    <svg class="social-links-icon">
+                      <use href="./images/sprite.svg#facebook"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social-links-item">
+                  <a class="social-links-link" href="/" aria-label="Линкедин">
+                    <svg class="social-links-icon">
+                      <use href="./images/sprite.svg#linkedin"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
             </li>
             <li class="team-list-item">
               <img
                 class="team-list-img"
-                src="./img/team/repina.jpg"
+                src="./images/team/repina.jpg"
                 alt="Улыбающаяся женщина в очках, которую зовут Ольга Репина"
                 width="270"
                 height="260"
               />
               <h3 class="team-list-name">Ольга Репина</h3>
               <p class="team-list-position" lang="en">Frontend Developer</p>
+              <ul class="social-links lists">
+                <li class="social-links-item">
+                  <a class="social-links-link" href="/" aria-label="Инстаграмм">
+                    <svg class="social-links-icon">
+                      <use href="./images/sprite.svg#instagram"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social-links-item">
+                  <a class="social-links-link" href="/" aria-label="Твиттер">
+                    <svg class="social-links-icon">
+                      <use href="./images/sprite.svg#twitter"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social-links-item">
+                  <a class="social-links-link" href="/" aria-label="Фейсбук">
+                    <svg class="social-links-icon">
+                      <use href="./images/sprite.svg#facebook"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social-links-item">
+                  <a class="social-links-link" href="/" aria-label="Линкедин">
+                    <svg class="social-links-icon">
+                      <use href="./images/sprite.svg#linkedin"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
             </li>
             <li class="team-list-item">
               <img
                 class="team-list-img"
-                src="./img/team/tarasov.jpg"
+                src="./images/team/tarasov.jpg"
                 alt="Улыбающийся мужчина с бородой, которого зовут Николай Тарасов"
                 width="270"
                 height="260"
               />
               <h3 class="team-list-name">Николай Тарасов</h3>
               <p class="team-list-position" lang="en">Marketing</p>
+              <ul class="social-links lists">
+                <li class="social-links-item">
+                  <a class="social-links-link" href="/" aria-label="Инстаграмм">
+                    <svg class="social-links-icon">
+                      <use href="./images/sprite.svg#instagram"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social-links-item">
+                  <a class="social-links-link" href="/" aria-label="Твиттер">
+                    <svg class="social-links-icon">
+                      <use href="./images/sprite.svg#twitter"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social-links-item">
+                  <a class="social-links-link" href="/" aria-label="Фейсбук">
+                    <svg class="social-links-icon">
+                      <use href="./images/sprite.svg#facebook"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social-links-item">
+                  <a class="social-links-link" href="/" aria-label="Линкедин">
+                    <svg class="social-links-icon">
+                      <use href="./images/sprite.svg#linkedin"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
             </li>
             <li class="team-list-item">
               <img
                 class="team-list-img"
-                src="./img/team/ermakov.jpg"
+                src="./images/team/ermakov.jpg"
                 alt="Улыбающийся мужчина в очках и с бородой, которого зовут Михаил Ермаков"
                 width="270"
                 height="260"
               />
               <h3 class="team-list-name">Михаил Ермаков</h3>
               <p class="team-list-position" lang="en">UI Designer</p>
+              <ul class="social-links lists">
+                <li class="social-links-item">
+                  <a class="social-links-link" href="/" aria-label="Инстаграмм">
+                    <svg class="social-links-icon">
+                      <use href="./images/sprite.svg#instagram"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social-links-item">
+                  <a class="social-links-link" href="/" aria-label="Твиттер">
+                    <svg class="social-links-icon">
+                      <use href="./images/sprite.svg#twitter"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social-links-item">
+                  <a class="social-links-link" href="/" aria-label="Фейсбук">
+                    <svg class="social-links-icon">
+                      <use href="./images/sprite.svg#facebook"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social-links-item">
+                  <a class="social-links-link" href="/" aria-label="Линкедин">
+                    <svg class="social-links-icon">
+                      <use href="./images/sprite.svg#linkedin"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
             </li>
           </ul>
         </div>

@@ -176,18 +176,7 @@ input[type="radio"].visually-hidden {
   justify-content: center;
 }
 
-.mail {
-  width: 16px;
-  height: 12px;
-}
-
-.phone {
-  width: 10px;
-  height: 16px;
-}
-
-.mail,
-.phone {
+.contacts-icon {
   fill: currentColor;
   margin-right: 10px;
 }
@@ -501,6 +490,19 @@ input[type="radio"].visually-hidden {
   letter-spacing: 0.03em;
   color: var(--color-text);
 }
+
+.portfolio-list-link {
+  display: inline-block;
+}
+
+.portfolio-list-link:hover,
+.portfolio-list-link:focus {
+  background: var(--extra-color);
+  border: 1px solid #eeeeee;
+  box-sizing: border-box;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+}
 /*==============END PORTFOLIO================*/
 
 /*==============FOOTER================*/
@@ -508,6 +510,11 @@ input[type="radio"].visually-hidden {
   background: #2f303a;
   padding-top: 60px;
   padding-bottom: 60px;
+}
+
+.footer .container {
+  display: flex;
+  align-items: baseline;
 }
 
 .logo-dark {
@@ -537,5 +544,54 @@ input[type="radio"].visually-hidden {
 
 .contact-information {
   color: rgba(255, 255, 255, 0.6);
+}
+
+.contacts {
+  margin-right: 70px;
+}
+
+.call {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.143;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--extra-color);
+  margin-bottom: 20px;
+}
+
+.social-footer {
+  display: flex;
+  justify-content: center;
+}
+
+.footer .social-links-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+}
+
+.footer .current-link,
+.footer .social-links-link:hover,
+.footer .social-list-link:focus {
+  background-color: var(--accent-color);
+}
+
+.footer .current-link .social-links-icon,
+.footer .social-links-link:hover .social-links-icon,
+.footer .social-links-link:focus .social-links-icon {
+  fill: var(--extra-color);
+}
+
+.footer .social-links-icon {
+  fill: var(--extra-color);
+}
+
+.footer .social-links-item:not(:last-child) {
+  margin-right: 10px;
 }
 /*==============END FOOTER================*/
